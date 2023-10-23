@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@1,500&family=Nunito:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --primary-blue-dark-1: #2E3D50;
+
+    --primary-blue-light-1: #8894A2;
+
+    --white: #FEEECD;
+
+    --secondary-bege-light-1: #D7B791;
+
+    --secondary-bege-medium-1: #C4762B;
+}
+
+.nav {
+    display: flex;
+    width: 70vw;
+    height: 10rem;
+    background-color: aqua;
+    margin: 0 auto;
+    gap: 4rem;
+    align-items: center;
+}
+
+.nav__logo {
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 3rem;
+}
+
+.nav__container {
+    display: flex;
+    align-items: center;
+}
+
+.nav__ul {
+    gap: 1.5rem;
+}
+
+.nav__li {
+
+}
+
+.nav__link {
+    letter-spacing: .08rem;
+}
+
+.nav__div {
+    margin-left: auto;
+}
