@@ -11,6 +11,7 @@
 
 html {
     font-size: 62.5%;
+    background-color: gray;
 }
 
 :root {
@@ -29,10 +30,10 @@ html {
     display: flex;
     width: 70vw;
     height: 10rem;
-    background-color: aqua;
     margin: 0 auto;
     gap: 4rem;
     align-items: center;
+    color: var(--white);
 }
 
 .nav__logo {
@@ -55,8 +56,13 @@ html {
 
 .nav__link {
     letter-spacing: .08rem;
+    color:  inherit;
 }
 
 .nav__div {
     margin-left: auto;
+}
+
+.nav__icon {
+    color: inherit;
 }
