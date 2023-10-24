@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@1,500&family=Nunito:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
 * {
     border: 0;
     margin: 0;
@@ -24,16 +25,29 @@ html {
     --secondary-bege-light-1: #D7B791;
 
     --secondary-bege-medium-1: #C4762B;
+
+    --sombra-1: #00000010;
+    --sombra-2: #00000020;
+    --sombra-3: #00000030;
+}
+.header {
+    background-image: url(images/Banner.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55rem;
 }
 
 .nav {
     display: flex;
-    width: 70vw;
+    width: 100%;
     height: 10rem;
     margin: 0 auto;
     gap: 4rem;
     align-items: center;
     color: var(--white);
+    background-color: var(--sombra-1);
+    padding: 1rem 30rem;
 }
 
 .nav__logo {
@@ -51,7 +65,7 @@ html {
 }
 
 .nav__li {
-
+    transition: all .2s;
 }
 
 .nav__link {
@@ -59,10 +73,49 @@ html {
     color:  inherit;
 }
 
+.nav__li:hover,
+.nav__li:focus {
+    transform: scale(1.02) translateY(-2px);
+    text-shadow: 0 .5rem .8rem var(--sombra-2);
+}
+
+.nav__li:active {
+    transform: translateY(-1px);
+    transform: scale(1.02) translateY(-.5px);
+    text-shadow: 0 .5rem .8rem var(--sombra-1);
+}
+
 .nav__div {
     margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.nav__div:hover,
+.nav__div:focus {
+    transform: scale(1.02) translateY(-2px);
+    text-shadow: 0 .5rem .8rem var(--sombra-2);
+}
+
+.nav__div:active {
+    transform: translateY(-1px);
+    transform: scale(1.02) translateY(-.5px);
+    text-shadow: 0 .5rem .8rem var(--sombra-1);
 }
 
 .nav__icon {
-    color: inherit;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+    fill: var(--white);
+    padding: .2rem;
+    border: .2rem solid var(--white);
+    border-radius: 50%;
+}
+
+.nav__texto {
+    font-size: 1.5rem;
 }
