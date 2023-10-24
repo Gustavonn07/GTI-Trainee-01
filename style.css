@@ -29,13 +29,21 @@ html {
     --sombra-1: #00000010;
     --sombra-2: #00000020;
     --sombra-3: #00000030;
+    --sombra-4: #00000040;
+    --sombra-5: #00000050;
+    --sombra-6: #00000060;
+    --sombra-7: #00000070;
+    --sombra-8: #00000080;
 }
 .header {
-    background-image: url(images/Banner.jpg);
+    background-image: 
+                        linear-gradient(90deg, var(--sombra-4) 0%, var(--sombra-4) 100%),
+                        url(images/Banner.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     height: 55rem;
+    position: relative;
 }
 
 .nav {
@@ -118,4 +126,47 @@ html {
 
 .nav__texto {
     font-size: 1.5rem;
+}
+
+.header__heading {
+    color: var(--white);
+    text-align: center;
+}
+
+.header__heading--primary {
+    font-size: 5rem;
+    margin-top: 7rem;
+    letter-spacing: .04rem;
+}
+
+.header__heading--secondary {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    letter-spacing: .08rem;
+}
+
+.header__span {
+    font-style: italic;
+    font-size: 2.25rem;
+}
+
+.header__btn {
+    background-color: var(--primary-blue-dark-1);
+    box-shadow: 0 .8rem 4rem var(--sombra-8);
+    width: 30rem;
+    font-size: 2.5rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    position: absolute;
+    top: 35rem;
+    right: 50%;
+    transform: translateX(50%);
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.header__btn:hover,
+.header__btn:focus {
+    transform: scale(1.02) translateX(50%);
+    box-shadow: 0 .8rem 4rem var(--sombra-6);
 }
