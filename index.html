@@ -10,17 +10,19 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <h2 class="nav__logo">Saberd</h2>
-            <ul class="nav__container nav__ul">
-                <li class="nav__li"><a class="nav__link nav__texto" href="#">Como funciona</a></li>
-                <li class="nav__li"><a class="nav__link nav__texto" href="#">Nossa promessa</a></li>
-                <li class="nav__li"><a class="nav__link nav__texto" href="#">Avaliações</a></li>
-                <!-- <li class="nav__li"><a class="nav__link nav__texto" href="#">Link</a></li> -->
-            </ul>
+            <div class="nav__container">
+                <h2 class="nav__logo">Saberd</h2>
+                <ul class="nav__container nav__ul">
+                    <li class="nav__li"><a class="nav__link nav__texto" href="#vantagens">Como funciona</a></li>
+                    <li class="nav__li"><a class="nav__link nav__texto" href="#">Nossa promessa</a></li>
+                    <li class="nav__li"><a class="nav__link nav__texto" href="#">Avaliações</a></li>
+                    <!-- <li class="nav__li"><a class="nav__link nav__texto" href="#">Link</a></li> -->
+                </ul>
+            </div>
 
             <div class="nav__container nav__div">
                 <svg class="nav__icon">
-                    <use alt="Icone que representa o perfil do usuário" xlink:href="/images/sprite.svg#icon-user"/>
+                    <use alt="Icone que representa o perfil do usuário" xlink:href="public/images/sprite.svg#icon-user"/>
                 </svg>
                 <h4 class="nav__email nav__texto">seuemail@gmail.com</h4>
             </div>
@@ -33,6 +35,52 @@
             Entre em contato
         </button>
     </header>
+
+    <main class="main">
+        <section class="vantagens" id="vantagens">
+            <div class="vantagens__container">
+                <div class="vantagens__typography">
+                    <h2 class="vantagens__heading--secondary">Especialização em Diversas Áreas do Direito</h2>
+
+                    <p class="vantagens__paragraph">
+                        Você merece a melhor equipe legal ao seu lado, capaz de enfrentar qualquer desafio jurídico. No nosso escritório de advocacia, oferecemos um diferencial que fará toda a diferença para você: a especialização em diversas áreas do direito. Seja uma questão de direito de família, uma disputa comercial complexa ou uma batalha legal criminal, nossa equipe experiente está preparada para atender às suas necessidades com habilidade e determinação.
+                    </p>
+                </div>
+
+                <svg class="vantagens__icon">
+                    <use alt="Icone que representa uma pena" xlink:href="public/images/sprite.svg#icon-quill"/>
+                </svg>
+            </div>
+
+            <div class="vantagens__container">
+                <div class="vantagens__typography">
+                    <h2 class="vantagens__heading--secondary">Atendimento Personalizado </h2>
+
+                    <p class="vantagens__paragraph">
+                        No nosso escritório de advocacia, o cliente está no centro de tudo o que fazemos. Nossa abordagem é baseada no atendimento personalizado e no entendimento das suas necessidades individuais. Quando você se junta a nós, não é apenas mais um caso; é uma parceria. Nossos advogados se dedicam a conhecer os seus objetivos e preocupações, garantindo que cada estratégia legal seja adaptada às suas necessidades específicas.
+                    </p>
+                </div>
+
+                <svg class="vantagens__icon">
+                    <use alt="Icone que representa a conversa de um advogado e um cliente" xlink:href="public/images/sprite.svg#icon-bubbles3"/>
+                </svg>
+            </div>
+
+            <div class="vantagens__container">
+                <div class="vantagens__typography">
+                    <h2 class="vantagens__heading--secondary">Acesso a Recursos e Redes Profissionais</h2>
+
+                    <p class="vantagens__paragraph">
+                        No mundo jurídico, ter conexões e acesso a recursos de qualidade é essencial. Quando você escolhe nosso escritório de advocacia, você não está apenas obtendo um time de advogados excepcionais, mas também uma extensa rede de contatos profissionais. Trabalhamos lado a lado com especialistas, peritos e outros profissionais da área para garantir que você tenha todas as ferramentas necessárias para o sucesso.
+                    </p>
+                </div>
+
+                <svg class="vantagens__icon">
+                    <use alt="Icone que representa o perfil de um advogado profissional" xlink:href="public/images/sprite.svg#icon-user-tie"/>
+                </svg>
+            </div>
+        </section>
+    </main>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>

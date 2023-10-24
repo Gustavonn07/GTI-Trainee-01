@@ -12,7 +12,8 @@
 
 html {
     font-size: 62.5%;
-    background-color: gray;
+    background-color: var(--black);
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -22,9 +23,12 @@ html {
 
     --white: #FEEECD;
 
+    --black: #131921;
+
     --secondary-bege-light-1: #D7B791;
 
     --secondary-bege-medium-1: #C4762B;
+    --secondary-bege-medium-2: #e58715;
 
     --sombra-1: #00000010;
     --sombra-2: #00000020;
@@ -35,10 +39,11 @@ html {
     --sombra-7: #00000070;
     --sombra-8: #00000080;
 }
+
 .header {
     background-image: 
                         linear-gradient(90deg, var(--sombra-4) 0%, var(--sombra-4) 100%),
-                        url(images/Banner.jpg);
+                        url(public/images/Banner.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,12 +60,14 @@ html {
     align-items: center;
     color: var(--white);
     background-color: var(--sombra-1);
-    padding: 1rem 30rem;
+    justify-content: center;
+    gap: 30rem;
 }
 
 .nav__logo {
     font-family: 'Asap Condensed', sans-serif;
     font-size: 3rem;
+    padding-right: 5rem;
 }
 
 .nav__container {
@@ -94,7 +101,6 @@ html {
 }
 
 .nav__div {
-    margin-left: auto;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -169,4 +175,55 @@ html {
 .header__btn:focus {
     transform: scale(1.02) translateX(50%);
     box-shadow: 0 .8rem 4rem var(--sombra-6);
+}
+
+.vantagens {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7rem;
+    padding-bottom: 8rem;
+    gap: 8rem;
+}
+
+.vantagens__container {
+    display: flex;
+    width: 85rem;
+    align-items: center;
+    gap: 5rem;
+}
+
+.vantagens__container:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.vantagens__typography {
+    width: 70%;
+}
+
+.vantagens__heading--secondary {
+    font-size: 3.2rem;
+    color: var(--primary-blue-dark-1);
+    white-space: nowrap;
+    margin-bottom: 2rem;
+}
+
+.vantagens__paragraph {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.vantagens__icon {
+    float: right;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+    overflow: visible;
+    background-color: var(--primary-blue-dark-1);
+    padding: 4rem;
+    fill: var(--secondary-bege-medium-2);
+    shape-outside: circle();
 }
