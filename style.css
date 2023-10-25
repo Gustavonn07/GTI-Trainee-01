@@ -20,6 +20,7 @@ html {
     --primary-blue-dark-1: #2E3D50;
 
     --primary-blue-light-1: #8894A2;
+    --primary-blue-light-2: #7ba6db;
 
     --white: #FEEECD;
     --white-2: #FEEFDE;
@@ -261,24 +262,99 @@ html {
 
 .promessa {
     background-color: var(--white-2);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .promessa__headings {
     text-align: center;
-    padding-top: 12rem;
+    padding-top: 6rem;
 }
 
 .promessa__heading--secondary {
     font-size: 5rem;
     color: var(--secondary-bege-medium-2);
+    transition: all .2s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.promessa__heading--secondary::before {
+    content: "";
+    width: 0;
+    height: .5rem;
+    background-color: var(--secondary-bege-medium-2);
+    border-radius: .8rem;
+    position: absolute;
+    top: 6rem;
+    left: 20%;
+    transition: all .5s;
+}
+
+.promessa__heading--secondary:hover::before,
+.promessa__heading--secondary:focus::before{
+    width: 60%;
 }
 
 .promessa__heading--tertiary {
     font-size: 2rem;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     color: var(--black);
 }
 
 .promessa__span {
     color: var(--secondary-bege-light-3);
+}
+
+.promessa__grid {
+    width: 100rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 8rem;
+}
+
+.promessa__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promessa__icon {
+    height: 10rem;
+    fill: var(--primary-blue-dark-1);
+    transition: all .2s;
+}
+
+.promessa__icon:hover,
+.promessa__icon:focus {
+    transform: scale(1.05) rotate(2deg);
+}
+
+
+.promessa__typography {
+    text-align: center;
+}
+
+.promessa__heading--quartenery {
+    font-size: 1.6rem;
+    padding-bottom: .5rem;
+    color: var(--primary-blue-light-1);
+    margin-top: 2rem;
+    transition: all .2s;
+}
+
+.promessa__heading--quartenery:hover,
+.promessa__heading--quartenery:focus {
+    transform: scale(1.05) skewX(5deg);
+}
+
+.promessa__paragraph {
+    font-size: 1.35rem;
+    margin-bottom: 1.8rem;
 }
