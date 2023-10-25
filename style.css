@@ -22,13 +22,16 @@ html {
     --primary-blue-light-1: #8894A2;
 
     --white: #FEEECD;
+    --white-2: #FEEFDE;
 
     --black: #131921;
 
     --secondary-bege-light-1: #D7B791;
+    --secondary-bege-light-2: #dcaa6c;
+    --secondary-bege-light-3: #cf9f65;
 
     --secondary-bege-medium-1: #C4762B;
-    --secondary-bege-medium-2: #e58715;
+    --secondary-bege-medium-2: #d4892e;
 
     --sombra-1: #00000010;
     --sombra-2: #00000020;
@@ -254,4 +257,28 @@ html {
 .vantagens__icon:hover,
 .vantagens__icon:focus {
     transform: scale(1.05) rotate(-3deg);
+}
+
+.promessa {
+    background-color: var(--white-2);
+}
+
+.promessa__headings {
+    text-align: center;
+    padding-top: 12rem;
+}
+
+.promessa__heading--secondary {
+    font-size: 5rem;
+    color: var(--secondary-bege-medium-2);
+}
+
+.promessa__heading--tertiary {
+    font-size: 2rem;
+    padding-top: 1rem;
+    color: var(--black);
+}
+
+.promessa__span {
+    color: var(--secondary-bege-light-3);
 }
