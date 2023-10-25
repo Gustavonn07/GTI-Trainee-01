@@ -40,6 +40,11 @@ html {
     --sombra-8: #00000080;
 }
 
+::selection {
+    background-color: var(--secondary-bege-medium-2);
+    color: var(--primary-blue-dark-1);
+}
+
 .header {
     background-image: 
                         linear-gradient(90deg, var(--sombra-4) 0%, var(--sombra-4) 100%),
@@ -68,7 +73,14 @@ html {
     font-family: 'Asap Condensed', sans-serif;
     font-size: 3rem;
     padding-right: 5rem;
+    transition: all .2s;
 }
+
+.nav__logo:hover,
+.nav__logo:focus {
+    transform: scale(1.01) rotate(-2deg);
+}
+
 
 .nav__container {
     display: flex;
@@ -158,7 +170,7 @@ html {
 
 .header__btn {
     background-color: var(--primary-blue-dark-1);
-    box-shadow: 0 .8rem 4rem var(--sombra-8);
+    box-shadow: 0 .8rem 4rem var(--sombra-7);
     width: 30rem;
     font-size: 2.5rem;
     padding: .5rem;
@@ -174,6 +186,11 @@ html {
 .header__btn:hover,
 .header__btn:focus {
     transform: scale(1.02) translateX(50%);
+    box-shadow: 0 .8rem 4rem var(--sombra-8);
+}
+
+.header__btn:active {
+    transform: scale(1.01) translateX(50%);
     box-shadow: 0 .8rem 4rem var(--sombra-6);
 }
 
@@ -207,6 +224,12 @@ html {
     color: var(--primary-blue-dark-1);
     white-space: nowrap;
     margin-bottom: 2rem;
+    transition: all .2s;
+}
+
+.vantagens__heading--secondary:hover,
+.vantagens__heading--secondary:focus {
+    transform: scale(1.015) translateY(-1px) skewX(5deg);
 }
 
 .vantagens__paragraph {
@@ -225,5 +248,10 @@ html {
     background-color: var(--primary-blue-dark-1);
     padding: 4rem;
     fill: var(--secondary-bege-medium-2);
-    shape-outside: circle();
+    transition: all .2s;
+}
+
+.vantagens__icon:hover,
+.vantagens__icon:focus {
+    transform: scale(1.05) rotate(-3deg);
 }
