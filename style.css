@@ -26,6 +26,7 @@ html {
     --white-2: #FEEFDE;
 
     --black: #131921;
+    --black-2: #22201e;
 
     --secondary-bege-light-1: #D7B791;
     --secondary-bege-light-2: #dcaa6c;
@@ -261,6 +262,17 @@ html {
     transform: scale(1.05) rotate(-3deg);
 }
 
+.heading__secondary {
+    transition: all .2s;
+    text-shadow: 0 .4rem .8rem var(--sombra-2);
+}
+
+.heading__secondary:hover,
+.heading__secondary:focus {
+    transform: scale(1.02);
+}
+
+
 .promessa {
     background-color: var(--white-2);
     display: flex;
@@ -365,9 +377,12 @@ html {
 }
 
 .avaliacoes {
-    height: 80rem;
     background-color: var(--secondary-bege-light-1);
     padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 18rem;
 }
 
 .avaliacoes__typography {
@@ -427,34 +442,69 @@ html {
 .avaliacoes__avaliacao {
     display: flex;
     justify-content: center;
+    gap: 6rem;
+    width: 80rem;
+    margin-top: 4rem;
+    padding: 3rem 6rem;
+
+    background-color: var(--primary-blue-light-1);
+    border-radius: 2rem 0 2rem 0;
+    transition: all .2s;
+    box-shadow: 0 .8rem 1rem var(--sombra-4);
+}
+
+.avaliacoes__avaliacao:hover,
+.avaliacoes__avaliacao:focus {
+    transform: translate(-3px) scale(1.04);
+    box-shadow: 0 .8rem 1rem var(--sombra-6);
+}
+
+.avaliacoes__avaliacao:not(:nth-child(even)) {
+    margin-left: 20rem;
 }
 
 .avaliacoes__perfil {
-    display: flex;
-    flex-direction: column;
+    position: relative;
 }
 
 .avaliacoes__imagem {
-    width: 15rem;
-    clip-path: circle(7rem at 50% 7rem);
+    width: 8rem;
+    clip-path: circle(4rem at 50% 4rem);
+}
+
+.avaliacoes__typography--nome { 
+    position: absolute;
+    top: 9rem;
+    width: 18rem;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--white);
 }
 
 .avaliacoes__nome {
-
+    font-size: 2rem;
 }
 
 .avaliacoes__descricao {
-
+    font-size: 1rem;
 }
 
 .avaliacoes__box {
-
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
 }
 
-.avaliacao__text {
-
+.avaliacoes__text {
+    font-size: 1.7rem;
+    color: var(--white);
 }
 
 .avaliacoes__icon {
-    width: 2.8rem;
+    fill: var(--secondary-bege-medium-2);
+    width: 1.8rem;
+    height: 1.8rem;
+    transition: all .2s;
+    filter: drop-shadow(0 .2rem .5rem var(--sombra-1));
 }
