@@ -423,3 +423,38 @@ html {
     background-color: var(--secondary-bege-light-3);
     border-radius: .5rem;
 }
+
+.avaliacoes__avaliacao {
+    display: flex;
+    justify-content: center;
+}
+
+.avaliacoes__perfil {
+    display: flex;
+    flex-direction: column;
+}
+
+.avaliacoes__imagem {
+    width: 15rem;
+    clip-path: circle(7rem at 50% 7rem);
+}
+
+.avaliacoes__nome {
+
+}
+
+.avaliacoes__descricao {
+
+}
+
+.avaliacoes__box {
+
+}
+
+.avaliacao__text {
+
+}
+
+.avaliacoes__icon {
+    width: 2.8rem;
+}
