@@ -16,24 +16,16 @@
     transition: all .2s;
 }
 
-.galeria__imagem:nth-child(odd):hover{
-    transform: scale(1.05) rotate(-3deg);
+.galeria__imagem:nth-child(odd):hover {
+    transform: scale(1.05) rotate(-4deg);
     box-shadow: var(--sombra-9);
     z-index: 10;
 }
 
-.galeria__imagem:nth-child(even):hover{
-    transform: scale(1.05) rotate(5deg);
+.galeria__imagem:nth-child(even):hover {
+    transform: scale(1.1) rotate(6deg);
     box-shadow: var(--sombra-9);
     z-index: 10;
-}
-
-.galeria__imagem:hover ~ .galeria__imagem:nth-child(even):not(:hover) {
-    transform: scale(.95) rotate(5deg);
-}
-
-.galeria__imagem:hover ~ .galeria__imagem:nth-child(odd):not(:hover) {
-    transform: scale(.95) rotate(-3deg);
 }
 
 .galeria__imagem:nth-child(1) {
