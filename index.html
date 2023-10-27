@@ -5,7 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saberd | Trabalhando com sabedoria.</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/vantagens.css">
+    <link rel="stylesheet" href="css/promessa.css">
+    <link rel="stylesheet" href="css/avaliacao.css">
+    <link rel="stylesheet" href="css/galeria.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@1,500&family=Nunito:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+        * {
+            border: 0;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        html {
+            font-size: 62.5%;
+            background-color: var(--black);
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --primary-blue-dark-1: #2E3D50;
+
+            --primary-blue-light-1: #8894A2;
+            --primary-blue-light-2: #7ba6db;
+
+            --white: #FEEECD;
+            --white-2: #FEEFDE;
+
+            --black: #131921;
+            --black-2: #22201e;
+
+            --secondary-bege-light-1: #D7B791;
+            --secondary-bege-light-2: #dcaa6c;
+            --secondary-bege-light-3: #cf9f65;
+
+            --secondary-bege-medium-1: #C4762B;
+            --secondary-bege-medium-2: #d4892e;
+
+            --sombra-1: #00000010;
+            --sombra-2: #00000020;
+            --sombra-3: #00000030;
+            --sombra-4: #00000040;
+            --sombra-5: #00000050;
+            --sombra-6: #00000060;
+            --sombra-7: #00000070;
+            --sombra-8: #00000080;
+            --sombra-9: #00000090;
+        }
+
+        ::selection {
+            background-color: var(--secondary-bege-medium-2);
+            color: var(--primary-blue-dark-1);
+        }
+
+        .heading__secondary {
+            transition: all .2s;
+            text-shadow: 0 .4rem .8rem var(--sombra-2);
+        }
+
+        .heading__secondary:hover,
+        .heading__secondary:focus {
+            transform: scale(1.02);
+        }
+
+    </style>
 </head>
 <body>
     <header class="header">
@@ -286,6 +356,14 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="galeria">
+            <img src="public/images/Gal3.jpg" alt="" class="galeria__imagem">
+            <img src="public/images/Gal1.jpg" alt="" class="galeria__imagem">
+            <img src="public/images/Gal2.jpg" alt="" class="galeria__imagem">
+            <img src="public/images/Gal4.jpg" alt="" class="galeria__imagem">
+            <img src="public/images/Gal5.jpg" alt="" class="galeria__imagem">
         </section>
     </main>
 </body>
