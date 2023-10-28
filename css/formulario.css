@@ -1,3 +1,160 @@
 .formulario {
-    height: 100rem;
+    background-color: var(--white-2);
+    height: 110rem;
+    color: var(--black);
+}
+
+.formulario__typography {
+    padding-top: 15rem;
+    margin: 0 auto;
+    width: 65rem;
+    text-align: center;
+}
+
+.formulario__heading--secondary {
+    font-size: 5rem;
+    transition: all .2s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-bege-medium-2);
+}
+
+.formulario__heading--secondary::before {
+    content: "";
+    width: 0;
+    height: .5rem;
+    background-color: var(--secondary-bege-medium-2);
+    border-radius: .8rem;
+    position: absolute;
+    top: 6.5rem;
+    left: 0;
+    transition: all .5s;
+}
+
+.formulario__heading--secondary:hover::before,
+.formulario__heading--secondary:focus::before{
+    width: 100%;
+}
+
+.formulario__heading--tertiary {
+    padding: 1.5rem;
+    font-size: 2.2rem;
+    color: var(--black);
+}
+
+.formulario__form {
+    padding-top: 4rem;
+    width: 65%;
+    margin: 0 auto;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+.formulario__container {
+    width: 50%;
+}
+
+.formulario__container:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__container:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.formulario__submit {
+    position: absolute;
+    top: 82.25%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3.8rem;
+    width: 10rem;
+    background-color: #ffffff;
+    transition: all .2s;
+    box-shadow: 0 .4rem .8rem var(--sombra-2);
+    border-radius: .3rem;
+}
+
+.formulario__submit:hover,
+.formulario__submit:focus {
+    transform: translateX(-50%) translateY(-2px) scale(1.03);
+    box-shadow: 0 .4rem .8rem var(--sombra-4);
+}
+
+.formulario__submit:active {
+    transform: translateX(-50%) translateY(-1px) scale(1.015);
+    box-shadow: 0 .4rem .8rem var(--sombra-3);
+}
+
+.formulario__box {
+    display: flex;
+    gap: .5rem;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.formulario__box--2 {
+    padding-top: 1.2rem;
+}
+
+.formulario__check {
+    width: 3rem;
+}
+
+.formulario__div:not(.formulario__endereco) {
+    display: flex;
+    width: 100%;
+}
+
+.formulario__endereco {
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#relato {
+    height: 22rem;
+    resize: none;
+}
+
+.formulario__heading--termo {
+    padding-top: 2rem;
+}
+
+.formulario__label {
+    padding-left: .5rem;
+    font-size: 1.8rem;
+    text-shadow: 0 .4rem .8rem var(--sombra-2);
+}
+
+.formulario__input {
+    width: 80%;
+    padding-left: .5rem;
+    height: 3.8rem;
+    border-radius: .3rem;
+    transition: all .2s;
+    box-shadow: 0 .4rem .8rem var(--sombra-2);
+}
+
+.formulario__input:valid {
+    border-bottom: .4rem solid var(--green);
+}
+
+.formulario__input:not(#endereco, #cidade, #cep, #estado, #nome, #sobrenome) {
+    width: 90%;
+}
+
+.formulario__input:hover,
+.formulario__input:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 .4rem .8rem var(--sombra-4);
 }
