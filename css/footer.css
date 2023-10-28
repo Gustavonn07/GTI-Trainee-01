@@ -1,0 +1,39 @@
+.footer {
+    height: 50rem;  
+    background-color: var(--secondary-bege-light-1); 
+}
+
+.footer__box {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__logo {
+    font-size: 6rem;
+    color: var(--white-2);
+    font-family: 'Asap Condensed', sans-serif;
+    transition: all .2s;
+}
+
+.footer__paragraph {
+    color: var(--white-2);
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.footer__icons {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    padding-top: 4.5rem;
+}
+
+.footer__icon {
+    fill: var(--white-2);
+    background-color: var(--secondary-bege-light-2);
+    padding: .5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    overflow: visible;
+}
