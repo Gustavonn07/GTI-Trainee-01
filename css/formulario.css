@@ -51,6 +51,7 @@
 
     display: flex;
     justify-content: center;
+    gap: 4rem;
 }
 
 .formulario__container {
@@ -94,6 +95,7 @@
 
 .formulario__box {
     display: flex;
+    align-items: center;
     gap: .5rem;
     width: 100%;
     flex-direction: column;
@@ -120,6 +122,10 @@
     grid-template-rows: repeat(2, 1fr);
 }
 
+.formulario__consentimento {
+    padding-left: 2.4rem;
+}
+
 #relato {
     height: 22rem;
     resize: none;
@@ -130,9 +136,20 @@
 }
 
 .formulario__label {
-    padding-left: .5rem;
+    align-self: flex-start;
+    padding-left: 3.5rem;
     font-size: 1.8rem;
     text-shadow: 0 .4rem .8rem var(--sombra-2);
+}
+
+.formulario__label--2 {
+    font-size: 1.8rem;
+    text-shadow: 0 .4rem .8rem var(--sombra-2);
+}
+
+.formulario__label--2:nth-child(1) {
+    padding-top: 4.5rem;
+    padding-left: 1.5rem;
 }
 
 .formulario__input {
