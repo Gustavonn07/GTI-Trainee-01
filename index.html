@@ -370,66 +370,98 @@
 
         <section class="formulario">
             <div class="formulario__typography">
-                <h2 class="formulario__heading--secondary">Precisa de nossos serviços?</h2>
+                <h2 class="formulario__heading--secondary heading__secondary">Precisa de nossos serviços?</h2>
                 <h3 class="formulario__heading--tertiary">Preencha o formulário abaixo para marcar uma consulta.</h3>
             </div>
 
-            <form>
+            <form class="formulario__form">
                 <div class="formulario__nome">
                     <h4 class="formulario__heading--quartenary">Nome</h4>
 
-                    <label class="formulario__label" for="#nome">Nome:</label>
+                    <label class="formulario__label" for="nome">Nome:</label>
                     <input type="text" class="formulario__input" id="nome" placeholder="Insira seu nome" required>
                     
-                    <label class="formulario__label" for="#sobrenome">Sobrenome:</label>
+                    <label class="formulario__label" for="sobrenome">Sobrenome:</label>
                     <input type="text" class="formulario__input" id="sobrenome" placeholder="Insira seu sobrenome" required>
                 </div>
 
                 <div class="formulario__endereco">
                     <h4 class="formulario__heading--quartenary">Endereço</h4>
 
-                    <label for="#endereco" class="formulario__label">Endereço:</label>
+                    <label for="endereco" class="formulario__label">Endereço:</label>
                     <input type="text" class="formulario__input" id="endereco" placeholder="Insira seu endereço" required>
 
-                    <label for="#cidade" class="formulario__label">Cidade:</label>
+                    <label for="cidade" class="formulario__label">Cidade:</label>
                     <input type="text" class="formulario__input" id="cidade" placeholder="Insira sua cidade" required>
 
-                    <label for="#estado" class="formulario__label">Estado:</label>
+                    <label for="estado" class="formulario__label">Estado:</label>
                     <input type="text" class="formulario__input" id="estado" placeholder="Insira seu estado" required>
 
-                    <label for="#cep" class="formulario__label">CEP / Código postal:</label>
+                    <label for="cep" class="formulario__label">CEP / Código postal:</label>
                     <input type="text" class="formulario__input" id="cep" placeholder="Insira seu CEP" required>
                 </div>
 
                 <div class="formulario__nascimento">
                     <h4 class="formulario__heading--quartenary">Data de nascimento</h4>
 
-                    <label for="#nasc" class="formulario__label">CEP / Código postal:</label>
+                    <label for="nasc" class="formulario__label">CEP / Código postal:</label>
                     <input type="date" class="formulario__input" id="nasc" required>
                 </div>
 
                 <div class="formulario__rg">
                     <h4 class="formulario__heading--quartenary">Registro Geral / RG</h4>
                     
-                    <label for="#rg" class="formulario__label">RG:</label>
-                    <input type="number" min="0" class="formulario__input" id="rg" required>
+                    <label for="rg" class="formulario__label">RG:</label>
+                    <input type="number" min="0" class="formulario__input" id="rg" placeholder="Inisira seu RG" required>
                 </div>
 
                 <div class="formulario__cep">
                     <h4 class="formulario__heading--quartenary">Cadastro de Pessoa Física / CPF</h4>
                     
-                    <label for="#cpf" class="formulario__label">CPF:</label>
-                    <input type="number" min="0" class="formulario__input" id="cpf" required>
+                    <label for="cpf" class="formulario__label">CPF:</label>
+                    <input type="number" min="0" class="formulario__input" id="cpf" placeholder="Insira seu CPF" required>
                 </div>
 
-                <!-- NUMTEL -->
-                <!-- EMAIL -->
-                <!-- PARTE CONTRARIA -->
-                <!-- RELATO DOS FATOS -->
-                <!-- MEIO DE PROVAS -->
-                <!-- DOCUMWENTOS PESSOAIS E PROVAS -->
-                <!-- TERMO -->
-                <!-- TIPO DE AGENDA -->
+                <div class="formulario__tel">
+                    <h4 class="formulario__heading--quartenary">Número de Telefone</h4>
+                    
+                    <label for="tel" class="formulario__label">Telefone:</label>
+                    <input type="number" min="0" class="formulario__input" id="tel" placeholder="Insira seu número" required>
+                </div>
+
+                <div class="formulario__email">
+                    <h4 class="formulario__heading--quartenary">Email</h4>
+                    
+                    <label for="email" class="formulario__label">Email:</label>
+                    <input type="email" class="formulario__input" id="email" placeholder="Insira seu email" required>
+                </div>
+
+                <div class="formulario__relato">
+                    <h4 class="formulario__heading--quartenary">Relato dos fatos</h4>
+                    
+                    <label for="relato" class="formulario__label">Relato:</label>
+                    <textarea rows="5" cols="40" class="formulario__input" id="relato" required></textarea>
+                    <!-- botar resize none no css -->
+                </div>
+                
+                <div class="formulario__docs">
+                    <h4 class="formulario__heading--quartenary">Documentos e Provas:</h4>
+                    
+                    <label for="docs" class="formulario__label">Documentos:</label>
+                    <input type="file" class="formulario__input--file"  id="docs">
+                </div>
+
+                <div class="formulario__consentimento">
+                    <h4 class="formulario__heading--quartenary">Termo de Consentimento:</h4>
+
+                    <input type="checkbox" class="formulario__check" id="consentimento--sigilo">
+                    <label for="consentimento--sigilo" class="formulario__label">Declaro estar ciente de que as informações por mim prestadas, serão gravadas e armazenadas pela advogada, que guardará o devido sigilo, conforme exigido por lei.</label>
+
+                    <input type="checkbox" class="formulario__check" id="consentimento--pagamento">
+                    <label for="consentimento--pagamento" class="formulario__label">Declaro ainda, estar ciente que a CONSULTA requer o pagamento de honorários no valor de R$150,00. Caso não opte por pagar os honorários, o procedimento será ATENDIMENTO.</label>
+                </div>
+
+                <input type="submit" class="formulario__submit">
             </form>
         </section>
     </main>
