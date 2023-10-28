@@ -105,9 +105,9 @@
         <h1 class="header__heading header__heading--primary">Você traz o problema, nós resolvemos.</h1>
         <h2 class="header__heading header__heading--secondary">Trabalhando com sabedoria. <span class="header__span">Serviço garantido.</span></h2>
 
-        <button class="header__btn header__heading">
+        <a href="#form" class="header__btn header__heading">
             Entre em contato
-        </button>
+        </a>
     </header>
 
     <main class="main">
@@ -370,7 +370,7 @@
             <img src="public/images/Gal5.jpg" alt="Um advogado e uma advogada conversando sobre um caso olhando o computador" class="galeria__imagem">
         </section>
 
-        <section class="formulario">
+        <section class="formulario" id="form">
             <div class="formulario__typography">
                 <h2 class="formulario__heading--secondary heading__secondary">Precisa de nossos serviços?</h2>
                 <h3 class="formulario__heading--tertiary">Preencha o formulário abaixo para marcar uma consulta.</h3>
@@ -438,32 +438,31 @@
                 </div>
 
                 <div class="formulario__container">
-                    <div class="formulario__relato">
-                        <h4 class="formulario__heading--quartenary">Relato dos fatos</h4>
-                    
+                    <div class="formulario__relato formulario__box">
                         <label for="relato" class="formulario__label">Relato:</label>
-                        <textarea rows="5" cols="40" class="formulario__input" id="relato" required></textarea>
-                        <!-- botar resize none no css -->
+                        <textarea class="formulario__input" id="relato" required></textarea>
                     </div>
-                    
-                    <div class="formulario__docs">
-                        <h4 class="formulario__heading--quartenary">Documentos e Provas:</h4>
-                    
-                        <label for="docs" class="formulario__label">Documentos:</label>
-                        <input type="file" class="formulario__input--file"  id="docs">
-                    </div>
-                    <div class="formulario__consentimento">
-                        <h4 class="formulario__heading--quartenary">Termo de Consentimento:</h4>
 
-                        <input type="checkbox" class="formulario__check" id="consentimento--sigilo">
-                        <label for="consentimento--sigilo" class="formulario__label">Declaro estar ciente de que as informações por mim prestadas, serão gravadas e armazenadas pela advogada, que guardará o devido sigilo, conforme exigido por lei.</label>
+                    <div class="formulario__consentimento">
+                        <h4 class="formulario__label formulario__heading--termo">Termo de Consentimento:</h4>
+
+                        <div class="formulario__box--2">
+                            <input type="checkbox" class="formulario__check" id="consentimento--sigilo" required>
+                            <label for="consentimento--sigilo" class="formulario__label formulario__label--check">
+                                Declaro estar ciente de que as informações por mim prestadas, serão gravadas e armazenadas pela advogada, que guardará o devido sigilo, conforme exigido por lei.
+                            </label>
+                        </div>
                         
-                        <input type="checkbox" class="formulario__check" id="consentimento--pagamento">
-                        <label for="consentimento--pagamento" class="formulario__label">Declaro ainda, estar ciente que a CONSULTA requer o pagamento de honorários no valor de R$150,00. Caso não opte por pagar os honorários, o procedimento será ATENDIMENTO.</label>
+                        <div class="formulario__box--2">
+                            <input type="checkbox" class="formulario__check" id="consentimento--pagamento" required>
+                            <label for="consentimento--pagamento" class="formulario__label formulario__label--check">
+                                Declaro ainda, estar ciente que a CONSULTA requer o pagamento de honorários no valor de R$150,00. Caso não opte por pagar os honorários, o procedimento será ATENDIMENTO.
+                            </label>
+                        </div>
+
+                        <input type="submit" class="formulario__submit">
                     </div>
                 </div>
-
-                <input type="submit" class="formulario__submit">
             </form>
         </section>
     </main>
