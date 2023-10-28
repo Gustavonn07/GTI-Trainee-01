@@ -76,7 +76,7 @@
 }
 
 .footer__heading--tertiary::before,
-.footer__container::before {
+.footer__container:nth-child(2):before {
     position: absolute;
     content: "";
     width: 100%;

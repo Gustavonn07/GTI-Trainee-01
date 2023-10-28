@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/galeria.css">
     <link rel="stylesheet" href="css/formulario.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/msg.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@1,500&family=Nunito:ital,wght@0,300;0,400;0,600;1,400&display=swap');
@@ -31,6 +32,10 @@
             font-size: 62.5%;
             background-color: var(--black);
             scroll-behavior: smooth;
+        }
+
+        body {
+            position: relative;
         }
 
         :root {
@@ -551,5 +556,12 @@
             </ul>
         </div>
     </footer>
+
+    <button class="mensagem">
+        <svg class="mensagem__icon">
+            <use xlink:href="public/images/sprite.svg#icon-mail"/>
+        </svg>
+        <span class="mensagem__span">Entre em contato</span>
+    </button>
 </body>
 </html>
