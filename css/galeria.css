@@ -28,6 +28,10 @@
         top: -4.5rem;
         width: 25vw;
     }
+
+    @media only screen and (max-width: 500px) {   
+        border: .3rem solid var(--primary-blue-dark-1);
+    }
 }
 
 .galeria__imagem:nth-child(odd):hover {
