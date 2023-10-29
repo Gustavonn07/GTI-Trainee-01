@@ -32,6 +32,10 @@
             font-size: 62.5%;
             background-color: var(--black);
             scroll-behavior: smooth;
+
+            @media only screen and (max-width: 700px) {
+                font-size: 50%;
+            }
         }
 
         body {
@@ -104,7 +108,7 @@
                 <svg class="nav__icon">
                     <use alt="Icone que representa o perfil do usuário" xlink:href="public/images/sprite.svg#icon-user"/>
                 </svg>
-                <h4 class="nav__email nav__texto">seuemail@gmail.com</h4>
+                <h4 class="nav__texto nav__email">seuemail@gmail.com</h4>
             </div>
         </nav>
 

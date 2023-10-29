@@ -1,29 +1,29 @@
 .footer {
-    height: 50rem;  
+    padding: 20% auto;
+    padding-bottom: 5rem;
     background-color: var(--secondary-bege-light-1); 
     color: var(--white-2);
 }
 
 .footer__container {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
 }
 
 .footer__container:nth-child(1) {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding-top: 7rem;
-    gap: 10rem;
+    gap: 4rem;
+
+    @media only screen and (max-width: 500px) {
+        flex-direction: column;
+    }
 }
 
 .footer__container:nth-child(2) {
     padding-top: 10rem;
     position: relative;
-}
-
-.footer__box {
-    display: flex;
-    flex-direction: column;
 }
 
 .footer__logo {

@@ -7,6 +7,10 @@
     padding-top: 7rem;
     padding-bottom: 8rem;
     gap: 8rem;
+
+    @media only screen and (max-width: 500px) {
+        gap: 4rem;
+    }
 }
 
 .vantagens__container {
@@ -14,14 +18,28 @@
     width: 85rem;
     align-items: center;
     gap: 5rem;
+
+    @media only screen and (max-width: 1000px) {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 .vantagens__container:nth-child(2) {
     flex-direction: row-reverse;
+
+    @media only screen and (max-width: 1000px) {
+        flex-direction: row;
+    }
 }
 
 .vantagens__typography {
     width: 70%;
+
+    @media only screen and (max-width: 500px) {
+        width: 100%;
+        padding: 1.8rem;
+    }
 }
 
 .vantagens__heading--secondary {
@@ -30,6 +48,14 @@
     white-space: nowrap;
     margin-bottom: 2rem;
     transition: all .2s;
+
+    @media only screen and (max-width: 1000px) {
+        white-space: unset;
+    }
+
+    @media only screen and (max-width: 700px) {
+        font-size: 2.8rem;
+    }
 }
 
 .vantagens__heading--secondary:hover,
@@ -45,7 +71,6 @@
 }
 
 .vantagens__icon {
-    float: right;
     width: 20rem;
     height: 20rem;
     border-radius: 100%;
@@ -54,6 +79,10 @@
     padding: 4rem;
     fill: var(--secondary-bege-medium-2);
     transition: all .2s;
+
+    @media only screen and (max-width: 1000px) {
+       display: none;
+    }
 }
 
 .vantagens__icon:hover,

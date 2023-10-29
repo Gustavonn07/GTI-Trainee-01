@@ -33,4 +33,8 @@
 
 .mensagem__span {
     color: var(--white);
+
+    @media only screen and (max-width: 500px) {
+        display: none;
+    }
 }
