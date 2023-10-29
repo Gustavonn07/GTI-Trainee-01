@@ -20,7 +20,15 @@
     position: relative;
     display: flex;
     justify-content: center;
-    width: 40rem;
+    width: 100%;
+
+    @media only screen and (max-width: 700px) {
+        font-size: 4rem;
+    }
+    
+    @media only screen and (max-width: 500px) {
+        font-size: 3rem;
+    }
 }
 
 .promessa__heading--secondary::before {
@@ -35,6 +43,12 @@
     transition: all .5s;
 }
 
+@media only screen and (max-width: 700px) {
+    .promessa__heading--secondary::before {
+        content: none;
+    }
+}
+
 .promessa__heading--secondary:hover::before,
 .promessa__heading--secondary:focus::before{
     width: 100%;
@@ -44,6 +58,15 @@
     font-size: 2rem;
     padding-top: 1.5rem;
     color: var(--black);
+    text-align: center;
+
+    @media only screen and (max-width: 1000px) {
+        font-size: 1.8rem;
+    }
+
+    @media only screen and (max-width: 700px) {
+        font-size: 1.6rem;
+    }
 }
 
 .promessa__span {
@@ -56,8 +79,25 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-content: center;
-    gap: 5rem;
+    gap: 3.5rem;
     margin-top: 8rem;
+    
+    @media only screen and (max-width: 1000px) {
+        width: 60rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 5rem;
+    }
+
+    @media only screen and (max-width: 700px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 2.5rem;
+    }
+
+    @media only screen and (max-width: 500px) {
+        width: 30rem;
+    }
 }
 
 .promessa__container {
@@ -78,9 +118,16 @@
     transform: scale(1.05) rotate(2deg);
 }
 
-
 .promessa__typography {
     text-align: center;
+
+    @media only screen and (max-width: 1000px) {
+        width: 30rem;
+    }
+
+    @media only screen and (max-width: 500px) {
+        width: 100%;
+    }
 }
 
 .promessa__heading--quartenery {
@@ -99,4 +146,5 @@
 .promessa__paragraph {
     font-size: 1.35rem;
     margin-bottom: 1.8rem;
+    padding: .8rem;
 }

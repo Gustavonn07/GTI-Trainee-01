@@ -2,18 +2,32 @@
     position: relative;
     display: flex;
     justify-content: center;
-    width: 130rem;
+    width: 90vw;
     margin: 0 auto;
+
+    @media only screen and (max-width: 1000px) {
+        width: 100%;
+    }
 }
 
 .galeria__imagem {
-    width: 28rem;
+    width: 18vw;
     position: absolute;
     border: .6rem solid var(--primary-blue-dark-1);
     border-radius: .2rem;
     box-shadow: 0 .2rem .6rem var(--sombra-7);
     top: -10rem;
     transition: all .2s;
+
+    @media only screen and (max-width: 1000px) {
+        top: -7rem;
+        width: 20vw;
+    }
+
+    @media only screen and (max-width: 500px) {
+        top: -4.5rem;
+        width: 25vw;
+    }
 }
 
 .galeria__imagem:nth-child(odd):hover {
@@ -32,28 +46,48 @@
     z-index: 1;
     left: 10%;
     transform: rotate(-3deg);
+
+    @media only screen and (max-width: 500px) {
+        left: 5%;   
+    }
 }
 
 .galeria__imagem:nth-child(2) {
     z-index: 2;
     left: 25%;
     transform: rotate(5deg);
+
+    @media only screen and (max-width: 500px) {
+        left: 20%;
+    }
 }
 
 .galeria__imagem:nth-child(3) {
     z-index: 3;
     left: 40%;
     transform: rotate(-3deg);
+
+    @media only screen and (max-width: 500px) {
+        left: 35%;   
+    }
 }
 
 .galeria__imagem:nth-child(4) {
     z-index: 4;
     left: 55%;
     transform: rotate(5deg);
+
+    @media only screen and (max-width: 500px) {
+        left: 50%;
+    }
 }
 
 .galeria__imagem:nth-child(5) {
     z-index: 5;
     left: 70%;
     transform: rotate(-3deg);
+
+    @media only screen and (max-width: 500px) {
+        
+    }
 }
